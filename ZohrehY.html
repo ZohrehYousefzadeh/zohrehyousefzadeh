@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="keywords" content="HTML, CSS">
+  <meta name="description" content="Personal Website">
+  <meta name="author" content="Zohreh Yousefzadeh">
+  <!--<meta http-equiv="refresh" content="30">-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <style>
+  .w3-theme {color:#000 !important; background-color:#ffe4c4 !important}
+  .w3-hover-theme:hover {color:#ffe4c4 !important; background-color:#DC143C !important}
+  .w3-text-theme {color:#FFA07A !important}
+  .material-icons {vertical-align:-14%}
+  .image {border-radius: 50%;}
+  </style>
+  <title>Zohreh Yousefzadeh</title>
+</head>
+<body>
+  <div class="w3-sidebar w3-bar-block w3-card w3-animate-left w3-black" style="display:none;z-index:5" id="mySidebar">
+    <button class="w3-bar-item w3-button w3-large w3-hover-theme w3-text-theme" onclick="w3_close()">&times; Close</button>
+    <a href="#aboutme" class="w3-bar-item w3-button w3-hover-theme">ABOUT ME</a>
+    <button class="w3-button w3-block w3-left-align w3-hover-theme w3-text-theme" onclick="myAccFunc()">EDUCATION <i class="fa fa-caret-down"></i></button>
+    <div id="demoAcc" class="w3-hide w3-white w3-card">
+      <div class="w3-dropdown-hover">
+        <a href="#" class="w3-bar-item w3-button w3-hover-theme" onmouseup="myDropFunc()">Master</a>
+        <div id="demoDrop" class="w3-dropdown-content w3-card-4" style="width:250px">
+          <a href="https://sbu.ac.ir/SitePages/Home.aspx" title="Shahid Beheshti University" target="_blank">
+            <img src="SBU.jpg" alt="Shahid Beheshti University" style="width:100%">
+          </a>
+          <div class="w3-container">
+            <p>M.Sc. in Computer Engineering, Shahid Beheshti University, Iran</p>
+          </div>
+        </div>
+      </div>
+      <div class="w3-dropdown-hover">
+        <a href="#" class="w3-bar-item w3-button w3-hover-theme" onmouseup="myDropFuncc()">Bachelor</a>
+        <div id="demoDropp" class="w3-dropdown-content w3-card-4" style="width:250px">
+          <a href="http://urmia.ac.ir/" title="Urmia University" target="_blank">
+            <img src="UU1.jpg" alt="Urmia University" style="width:100%">
+          </a>
+          <div class="w3-container">
+            <p>B.Sc. in Computer Engineering, Urmia University, Iran</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a href="Resume.pdf#resume" target="_blank" class="w3-bar-item w3-button w3-hover-theme">RESUME</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-hover-theme">CONTACT ME</a>
+  </div>
+  <div class="w3-overlay w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" id="myOverlay"></div>
+  <br>
+<div id="main">
+  <div class="w3-teal w3-theme">
+    <button id="openNav" class="w3-button w3-teal w3-xlarge w3-theme w3-hover-theme" onclick="w3_open()">&#9776;</button>
+    <h2 style="font-size:220%;padding:20px 0 0 0;"><address>Hi, I'm Zohreh Yousefzadeh.</address></h2>
+  </div>
+
+
+  <br>
+  <br>
+<div id="aboutme" title="About Me" style="text-align:center;">
+  <a href="know-me-more.html" title="Click To Know Me More" target="_blank">
+  <img class="image" src="zohre2.jpg" alt="My Photo" width="400" height="400" style="float: left;padding:20px;">
+  </a>
+  <p style="font-size:160%;padding:100px 0 0 0;">
+  I am working on a project related to Artificial Intelligence. Currently, I am a Master's Student in Computer Engineering at Shahid Beheshti University, Tehran, Iran. I received my B.Sc. in Computer Engineering from Urmia University in 2019.
+</p>
+</div>
+<br>
+<p title="Resume" style="text-align:center;font-size:160%;">
+  Here is my <a href="Resume.pdf" target="_blank"><strong>Resume</strong></a>.
+</p>
+
+<br><br><br><br><br>
+<hr>
+
+  <p id="contact" style="text-align:center;">
+  <address style="text-align:center;">
+   Written by <b>Zohreh Y</b>.<br>
+   <div class="w3-padding w3-xlarge w3-teal w3-theme">
+     <a href="mailto:zhrh1375@gmail.com" title="My E-mail">
+     <i class="w3-spin material-icons">mail</i>
+     </a>
+     <a href="https://www.linkedin.com/in/zohreh-yousefzadeh-9211481a0/" title="My LinkedIn" target="_blank">
+     <i class="w3-spin fa fa-linkedin"></i>
+     </a>
+   </div>
+  </address>
+  </p>
+
+
+</div>
+
+<script>
+function myAccFunc() {
+  var x = document.getElementById("demoAcc");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+    x.previousElementSibling.className += " w3-black";
+  } else {
+    x.className = x.className.replace(" w3-show", "");
+    x.previousElementSibling.className = x.previousElementSibling.className.replace(" w3-black", "");
+  }
+}
+function myDropFunc() {
+  var x = document.getElementById("demoDrop");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+    x.previousElementSibling.className += " w3-black";
+  } else {
+    x.className = x.className.replace(" w3-show", "");
+    x.previousElementSibling.className = x.previousElementSibling.className.replace(" w3-black", "");
+  }
+}
+function myDropFuncc() {
+  var x = document.getElementById("demoDropp");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+    x.previousElementSibling.className += " w3-black";
+  } else {
+    x.className = x.className.replace(" w3-show", "");
+    x.previousElementSibling.className = x.previousElementSibling.className.replace(" w3-black", "");
+  }
+}
+function w3_open() {
+  document.getElementById("main").style.marginLeft = "20%";
+  document.getElementById("mySidebar").style.width = "20%";
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+  document.getElementById("openNav").style.display = 'none';
+}
+function w3_close() {
+  document.getElementById("main").style.marginLeft = "0%";
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+  document.getElementById("openNav").style.display = "inline-block";
+}
+</script>
+
+</body>
+</html>

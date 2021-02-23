@@ -1,0 +1,40 @@
+body {
+  background-color: #FFE4C4;
+  background-image: url('');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+
+
+h2 {
+  font-size:25px;
+  text-align:center;
+
+}
+
+p {
+
+}
+
+a:link {
+  color: #8B0000;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:visited {
+  color: #FFA07A;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:hover {
+  color: #DC143C;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:active {
+  color: #8B0000;
+  background-color: transparent;
+  text-decoration: none;
+}
